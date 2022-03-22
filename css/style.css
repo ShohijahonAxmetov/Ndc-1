@@ -847,6 +847,10 @@ select {
   margin-bottom: var(--24px);
 }
 
+.reviews{
+  cursor: pointer;
+}
+
 .rev__card{
   height: 350px;
   border: 1px solid #707070;
@@ -893,10 +897,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* gap: 1rem; */
   position: relative;
-  left: 60%;
-  margin-top: -5%;
   z-index: 99;
 }
 
@@ -976,4 +977,20 @@ select {
 
 .blog__card-link:hover{
   color: white;
+}
+
+.cursor{
+  position: fixed;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.show-cursor{
+  opacity: 1;
 }

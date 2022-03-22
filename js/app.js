@@ -1,3 +1,19 @@
+const cursor = document.getElementById('cursor')
+const reviews = document.getElementById('reviews')
+
+window.addEventListener('mousemove', function(e){
+    cursor.style.left = e.clientX + 'px'
+    cursor.style.top = e.clientY + 'px';
+});
+
+reviews.addEventListener('mouseleave', function(e) {
+  cursor.classList.remove('show-cursor')
+})
+
+reviews.addEventListener('mousemove', function(e) {
+  cursor.classList.add('show-cursor')
+})
+
 function scrollHeader(){
     let navbar = document.getElementById('navbar')
     if(this.scrollY >= 50) navbar.classList.add('scroll-header'); else navbar.classList.remove('scroll-header')
