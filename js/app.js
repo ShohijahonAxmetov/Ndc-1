@@ -33,3 +33,38 @@ var maskOptions = {
   mask: '+{998}(00)000-00-00'
 };
 var mask = IMask(element, maskOptions);
+
+$('.parallax-button').on('mouseenter', function() {
+  $(this).addClass('hovered');
+});
+
+$('.parallax-button').on('mouseleave', function() { 
+  $(this).removeClass('hovered');
+  
+  $('.parallax-button .forground').css({
+    'text-shadow': 'none',
+    'background-image': 'none',
+  })
+});
+
+$('.parallax-button').on('mousemove', function(e) {
+  const bounds = this.getBoundingClientRect();
+  const centerX = bounds.left + bounds.width / 2;
+  const centerY = bounds.top + bounds.height;
+  
+  const deltaX = Math.floor((centerX - e.clientX)) * 0.222;
+  const deltaY = Math.floor((centerY - e.clientY)) * 0.333;
+ 
+  
+  $(this).css({
+    transform: 'translate3d('+ deltaX * 1.2 +'px, '+ deltaY * 1.2 +'px, 0px)'
+  });
+  
+  $('.parallax-button .forground').css({
+    'text-shadow': deltaX * 0.4 + 'px 5px 15px rgba(0,0,0,0.2)',
+  })
+  
+  $('.parallax-button .shadow').css({
+    transform: 'translate3d('+ deltaX +'px, 15px, 0px)'
+  });
+});
