@@ -84,3 +84,4 @@ $('.parallax-button').on('mousemove', function(e) {
     transform: 'translate3d('+ deltaX +'px, 15px, 0px)'
   });
 });
+
