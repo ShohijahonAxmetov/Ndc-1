@@ -13,3 +13,9 @@ new Swiper('.partnersSwiper', {
     disableOnInteraction: false,
   },
 })
+
+var element = document.getElementById('telNum');
+var maskOptions = {
+  mask: '+{998}(00)000-00-00'
+};
+var mask = IMask(element, maskOptions);
