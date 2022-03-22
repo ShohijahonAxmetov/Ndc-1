@@ -775,3 +775,69 @@ select {
 .flexer__select{
   margin-bottom: var(--24px);
 }
+
+.rev__card{
+  height: 350px;
+  border: 1px solid #707070;
+  padding: 24px;
+}
+
+.rev__card-top{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--16xp);
+}
+
+.rev__card-pic{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: var(--16xp);
+}
+
+.rev__card-txt{
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  line-height: var(--24px);
+}
+
+.rev__card-name{
+  font-size: var(--24px);
+  margin-bottom: .5rem;
+}
+
+.rev__card-status{
+  opacity: .7;
+}
+
+.btns{
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+  position: relative;
+  left: 60%;
+  margin-top: -5%;
+  z-index: 99;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  display: none;
+}
+
+.swiper-button-prev{
+  left: 20%;
+}
+
+.swiper-button-next{
+  right: 20%;
+}
