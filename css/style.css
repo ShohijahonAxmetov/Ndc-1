@@ -47,6 +47,7 @@
 
   --blue-grad: linear-gradient(140.28deg, #1878F3 -24.89%, #1051F6 144.16%);
   --blue: #1878F3;
+  --black-grad: linear-gradient(140.06deg, #272727 -27.72%, #121212 137.01%);
 }
 
 html{
@@ -1016,4 +1017,100 @@ select {
 
 .show-cursor{
   opacity: 1;
+}
+
+.page__main{
+  padding-top: 200px;
+}
+
+.page__top{
+  padding-bottom: 56px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.page__title{
+  font-size: var(--64px);
+  line-height: 72px;
+  font-weight: 600;
+}
+
+.page__txt{
+  font-size: var(--32px);
+  line-height: var(--40px);
+  opacity: .8;
+  max-width: 700px;
+}
+
+.serv__page-grid{
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 64px;
+}
+
+.serv__card{
+  height: 550px;
+}
+
+.serv__card-link{
+  display: block;
+  height: 100%;
+}
+
+.card__wrapper{
+  background: var(--black-grad);
+  transition: .3s;
+  padding: 40px; 
+  display: block;
+  height: 100%;
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.serv__card-link:hover{
+  color: white;
+}
+
+.card__wrapper:hover{
+  background: var(--blue);
+}
+
+.serv__card-bottom{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.small__button{
+  margin-bottom: 0;
+  width: 180px;
+  height: 180px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.serv__card-title{
+  font-size: var(--28px);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.serv__card-txt{
+  font-size: var(--20px);
+  line-height: var(--32px);
+  opacity: .8;
+}
+
+.serv__card-price{
+  font-size: var(--28px);
+  font-weight: 600;
+}
+
+.serv__card:hover .small__button{
+  opacity: 1;
+  visibility: visible;
 }
