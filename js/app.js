@@ -38,6 +38,24 @@ new Swiper('.revSwiper', {
   },
 })
 
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active__tab')
+        })
+        target.classList.add('active__tab')
+        tabs.forEach(tab => {
+            tab.classList.remove('active__tab')
+        })
+        tab.classList.add('active__tab')
+    })
+})
+
 $('.parallax-button').on('mousemove', function(e) {
   const bounds = this.getBoundingClientRect();
   const centerX = bounds.left + bounds.width / 2;

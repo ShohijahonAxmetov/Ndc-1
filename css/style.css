@@ -1239,3 +1239,66 @@ select {
   top: 0;
   width: 30px;
 }
+
+.no__transform{
+  transform: none !important;
+}
+
+.port__page-pic{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.page__top-sec{
+  padding-bottom: 50px;
+}
+
+.tabs__container{
+  padding: 0 !important;
+}
+
+.tabs__content{
+  display: none;
+  transition: .3s;
+}
+
+.active__tab{
+  display: block;
+}
+
+.active__tab.tabs__button{
+  opacity: 1;
+}
+
+.active__tab.tabs__button::before{
+  background: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+.tabs-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #505050;
+}
+
+.tab__title{
+  font-size: calc(var(--40px) + 8px);
+  font-weight: 700;
+}
+
+.tabs__button{
+  cursor: pointer;
+  font-size: var(--32px);
+  font-weight: 600;
+  opacity: .7;
+  transition: .3s;
+  margin-right: var(--56px);
+}
+
+.tabs__button:last-child{
+  margin-right: 0;
+}
