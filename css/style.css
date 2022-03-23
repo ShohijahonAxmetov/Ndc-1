@@ -1348,3 +1348,8 @@ select {
 .big__link-card{
   display: block;
 }
+
+.big__link-card:hover,
+.small__link-card:hover{
+  color: white;
+}
