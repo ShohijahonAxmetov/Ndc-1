@@ -28,25 +28,6 @@ new Swiper('.revSwiper', {
   },
 })
 
-var element = document.getElementById('telNum');
-var maskOptions = {
-  mask: '+{998}(00)000-00-00'
-};
-var mask = IMask(element, maskOptions);
-
-$('.parallax-button').on('mouseenter', function() {
-  $(this).addClass('hovered');
-});
-
-$('.parallax-button').on('mouseleave', function() { 
-  $(this).removeClass('hovered');
-  
-  $('.parallax-button .forground').css({
-    'text-shadow': 'none',
-    'background-image': 'none',
-  })
-});
-
 $('.parallax-button').on('mousemove', function(e) {
   const bounds = this.getBoundingClientRect();
   const centerX = bounds.left + bounds.width / 2;
@@ -67,6 +48,25 @@ $('.parallax-button').on('mousemove', function(e) {
   $('.parallax-button .shadow').css({
     transform: 'translate3d('+ deltaX +'px, 15px, 0px)'
   });
+});
+
+var element = document.getElementById('telNum');
+var maskOptions = {
+  mask: '+{998}(00)000-00-00'
+};
+var mask = IMask(element, maskOptions);
+
+$('.parallax-button').on('mouseenter', function() {
+  $(this).addClass('hovered');
+});
+
+$('.parallax-button').on('mouseleave', function() { 
+  $(this).removeClass('hovered');
+  
+  $('.parallax-button .forground').css({
+    'text-shadow': 'none',
+    'background-image': 'none',
+  })
 });
 
 const cursor = document.getElementById('cursor')
