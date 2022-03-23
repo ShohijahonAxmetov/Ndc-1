@@ -4,6 +4,16 @@ function scrollHeader(){
   }
 window.addEventListener('scroll', scrollHeader)
 
+let navToggle = document.getElementById('toggle')
+    navCollapse = document.getElementById('collapse')
+
+if(navToggle){
+  navToggle.addEventListener('click', () => {
+    navCollapse.classList.toggle('show-menu')
+    navToggle.classList.toggle('close-btn')
+  })
+}
+
 new Swiper('.partnersSwiper', {
   slidesPerView: 6,
   spaceBetween: 24,
@@ -84,3 +94,4 @@ reviews.addEventListener('mouseleave', function(e) {
 reviews.addEventListener('mousemove', function(e) {
   cursor.classList.add('show-cursor')
 })
+

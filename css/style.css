@@ -257,6 +257,7 @@ select {
 .navbar__toggler{
     cursor: pointer;
     padding: 10px;
+    z-index: 999;
 }
 
 .toggle{
@@ -274,6 +275,7 @@ select {
     height: 2px;
     width: 30px;
     background: white;
+    transition: .3s;
 }
 
 .toggle::before{
@@ -283,6 +285,7 @@ select {
     content: '';
     height: 2px;
     width: 20px;
+    transition: .3s;
     background: white;
 }
 
@@ -1183,4 +1186,56 @@ select {
 .inner__card-txt{
   font-size: var(--18px);
   opacity: .8;
+}
+
+.navbar__collapse{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+.navbar__content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.navbar__link{
+  font-weight: 500;
+  opacity: .7;
+  transition: .3s;
+  font-size: var(--32px);
+}
+
+.navbar__link:hover{
+  color: white;
+  opacity: 1;
+}
+
+.show-menu{
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-btn .toggle{
+  height: 0;
+}
+.close-btn .toggle::after{
+  transform: rotate(-45deg);
+  top: 0;
+  width: 30px;
+}
+.close-btn .toggle::before{
+  transform: rotate(45deg);
+  top: 0;
+  width: 30px;
 }
