@@ -1353,3 +1353,113 @@ select {
 .small__link-card:hover{
   color: white;
 }
+
+.about__page{
+  padding-top: 100px;
+}
+
+.about__home-title{
+  margin-bottom: 64px;
+  max-width: 80%;
+}
+
+.about__home-pic{
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.about__home-row{
+  padding-top: 64px;
+}
+
+.small__title{
+  font-size: var(--40px);
+  font-weight: 500;
+  margin-bottom: var(--24px);
+}
+
+.margin__txt{
+  font-size: var(--24px);
+  line-height: 36px;
+  opacity: .7;
+  margin-bottom: 40px;
+}
+
+.about__home-li{
+  font-size: calc(var(--56px) - 4px);
+  font-weight: 500;
+  margin-bottom: 40px;
+  transition: .3s;
+  cursor: pointer;
+  list-style: none;
+}
+
+.about__home-li:hover{
+  color: var(--blue);
+}
+
+.about__num-section{
+  background: white;
+  color: black;
+}
+
+.num__sec-txt{
+  font-size: var(--32px);
+  line-height: calc(var(--40px) + 8px);
+  font-weight: 500;
+  margin-bottom: var(--56px);
+}
+
+.big__num{
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.num__txt{
+  font-size: var(--24px);
+}
+
+.gre{
+  color: #667B8C;
+  margin-top: 56px;
+}
+
+.team__slide-pic{
+  height: 470px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.team__slide-img{
+  position: relative;
+}
+
+.team__slide-img::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.10127801120448177) 35%, rgba(0,0,0,0.3533788515406162) 60%, rgba(0,0,0,0.4990371148459384) 100%);
+}
+
+.team__slide-content{
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+
+.team__slide-name{
+  font-size: var(--28px);
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.team__slide-status{
+  font-size: var(--24px);
+  opacity: .7;
+  font-weight: 300;
+}

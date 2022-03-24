@@ -1,7 +1,7 @@
 function scrollHeader(){
     let navbar = document.getElementById('navbar')
     if(this.scrollY >= 50) navbar.classList.add('scroll-header'); else navbar.classList.remove('scroll-header')
-  }
+}
 window.addEventListener('scroll', scrollHeader)
 
 let navToggle = document.getElementById('toggle')
@@ -35,6 +35,15 @@ new Swiper('.revSwiper', {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+})
+
+new Swiper('.teamSwiper', {
+  slidesPerView: 5,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
   },
 })
 
@@ -78,12 +87,6 @@ $('.parallax-button').on('mousemove', function(e) {
   });
 });
 
-var element = document.getElementById('telNum');
-var maskOptions = {
-  mask: '+{998}(00)000-00-00'
-};
-var mask = IMask(element, maskOptions);
-
 $('.parallax-button').on('mouseenter', function() {
   $(this).addClass('hovered');
 });
@@ -96,6 +99,12 @@ $('.parallax-button').on('mouseleave', function() {
     'background-image': 'none',
   })
 });
+
+var element = document.getElementById('telNum');
+var maskOptions = {
+  mask: '+{998}(00)000-00-00'
+};
+var mask = IMask(element, maskOptions);
 
 const cursor = document.getElementById('cursor')
 const reviews = document.getElementById('reviews')
@@ -113,3 +122,16 @@ reviews.addEventListener('mousemove', function(e) {
   cursor.classList.add('show-cursor')
 })
 
+const tl = gsap.timeline()
+const items = document.querySelectorAll('.big__num')
+
+tl.from(items, {
+  textContent: 0,
+  duration: 3,
+  snap: { textContent: 1 },
+})
+tl.from('.plus', {
+  y: -30,
+  opacity: 0,
+  ease: 'elastic',
+}) 
