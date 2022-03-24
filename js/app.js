@@ -15,17 +15,28 @@ if(navToggle){
 }
 
 new Swiper('.partnersSwiper', {
-  slidesPerView: 6,
+  slidesPerView: 1,
   spaceBetween: 24,
   loop: true,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 5,
+    },
+    1024: {
+      slidesPerView: 6,
+    },
+  },
 })
 
 new Swiper('.revSwiper', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 24, 
   loop: true,
   autoplay: {
@@ -35,6 +46,17 @@ new Swiper('.revSwiper', {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1.5,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
   },
 })
 
