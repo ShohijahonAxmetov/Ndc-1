@@ -1687,4 +1687,24 @@ select {
   .navbar__lang{
     display: none;
   }
+  .home{
+    height: 130vh;
+  }
+  .home__title{
+    font-size: 36px;
+  }
+  .home__sub{
+    line-height: 130%;
+  }
+  .footer__bottom{
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer__socs{
+    margin-right: 0;
+  }
+  .contact__container{
+    padding: 0 !important;
+  }
 }
