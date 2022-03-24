@@ -1463,3 +1463,64 @@ select {
   opacity: .7;
   font-weight: 300;
 }
+
+.big__map{
+  padding-top: 100px;
+}
+
+.big__map-title{
+  margin-bottom: 56px;
+}
+
+.map__wrapper{
+  position: relative;
+}
+
+.map__form{
+  background-color: white;
+  color: black;
+  max-width: 570px;
+  padding: 50px 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.reverse__colors{
+  mix-blend-mode: difference;
+  margin-bottom: 0 !important;
+  width: 140px;
+  height: 140px;
+}
+
+.form__grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 32px;
+  margin-bottom: 46px;
+}
+
+.form__name{
+  margin-bottom: .5rem;
+  opacity: .8;
+}
+
+.form__txt{
+  font-size: var(--20px);
+  font-weight: 500;
+}
+
+.map__input{
+  width: 100%;
+  margin-bottom: var(--24px);
+  padding: 20px;
+}
+
+.checkbox__txt{
+  line-height: 25px;
+  cursor: pointer;
+}
+  
+.linko{
+  color: var(--blue);
+}
