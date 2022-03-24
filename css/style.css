@@ -1688,7 +1688,10 @@ select {
     display: none;
   }
   .home{
-    height: 130vh;
+    height: unset !important;
+  }
+  .home__container{
+    padding-top: 120px;
   }
   .home__title{
     font-size: 36px;
@@ -1706,5 +1709,8 @@ select {
   }
   .contact__container{
     padding: 0 !important;
+  }
+  .home__scroll{
+    display: none;
   }
 }
