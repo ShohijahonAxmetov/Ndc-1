@@ -312,6 +312,8 @@ select {
     height: 100vh;
     display: flex;
     align-items: center;
+    background: url(../img/home.gif) center no-repeat;
+    background-size: cover;
     position: relative;
 }
 
