@@ -1527,6 +1527,10 @@ select {
   color: var(--blue);
 }
 
+.big__pic{
+  width: 100%;
+}
+
 @media screen and (max-width: 992px) {
   :root{
     --64px: 56px;
@@ -1567,9 +1571,25 @@ select {
   .radiohead{
     padding-left: .5rem !important;
   }
+  .page__top{
+    flex-wrap: wrap;
+  }
+  .page__title{
+    margin-bottom: 2rem;
+  }
+  .serv__page-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tabs-top{
+    flex-wrap: wrap;
+  }
+  .map__form{
+    position: static;
+    max-width: 100%;
+  }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 776px) {
   .title{
     line-height: 100%;
     font-size: var(--32px);
@@ -1642,6 +1662,15 @@ select {
   .blog__row{
     grid-template-columns: repeat(1, 1fr);
   }
+  .tab__title{
+    margin-bottom: 1rem;
+  }
+  .port__page-pic{
+    margin-top: 2rem;
+  }
+  .box{
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -1712,5 +1741,74 @@ select {
   }
   .home__scroll{
     display: none;
+  }
+  .page__main{
+    padding-top: 130px;
+  }
+  .serv__page-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card__wrapper{
+    padding: 30px;
+  }
+  .serv__card{
+    height: 400px;
+  }
+  .tabs__button{
+    margin-bottom: .5rem;
+  }
+  .inner__small-pic,
+  .inner__big-pic{
+    height: 400px;
+  }
+  .inner__small-card,
+  .inner__big-card{
+    margin-bottom: 50px;
+  }
+  .big__img-button{
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .big__img-btn{
+    width: 150px;
+    height: 150px;
+  }
+  .big__img-top{
+    padding-top: 0;
+  }
+  .page__title{
+    font-size: var(--56px);
+    line-height: 130%;
+  }
+  .map__form{
+    padding: 20px;
+  }
+  .form__grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .map iframe{
+    height: 500px !important;
+  }
+  .uzi{
+    flex-wrap: wrap;
+  }
+  .reverse__colors{
+    margin-top: 2rem;
+  }
+  .about__home-pic{
+    height: 400px;
+  }
+  .about__home-li{
+    margin-bottom: 1rem;
+  }
+  .num__sec-txt{
+    font-size: var(--28px);
+    line-height: 130%;
+  }
+  .big__num{
+    font-size: var(--56px);
+  }
+  .num__txt{
+    font-size: var(--16xp);
   }
 }

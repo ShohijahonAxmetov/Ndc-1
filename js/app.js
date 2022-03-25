@@ -61,11 +61,22 @@ new Swiper('.revSwiper', {
 })
 
 new Swiper('.teamSwiper', {
-  slidesPerView: 5,
+  slidesPerView: 1.2,
   loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
   },
 })
 
