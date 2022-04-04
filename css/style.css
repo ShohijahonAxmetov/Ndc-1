@@ -1751,9 +1751,6 @@ select {
   .card__wrapper{
     padding: 30px;
   }
-  .serv__card{
-    height: 400px;
-  }
   .tabs__button{
     margin-bottom: .5rem;
   }
@@ -1810,6 +1807,15 @@ select {
   }
   .num__txt{
     font-size: var(--16xp);
+  }
+  .serv__card{
+    height: initial !important;
+  }
+  .card__wrapper{
+    height: auto;
+  }
+  .radiohead{
+    padding-left: 0 !important;
   }
 }
 
